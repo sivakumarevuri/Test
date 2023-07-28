@@ -2,6 +2,8 @@ import csv
 import random
 import os
 
+from test_plot import test_plot
+
 current_dir = '/home/lucifer/Desktop/siva/data/'
 branch = ['CSE', 'ECE', 'IT', 'EEE', 'CIVIL']
 fields = ["Student_id", "Branch", "Percentage"]
@@ -26,3 +28,5 @@ with open(file_path, 'a') as csvfile:
         temp.append(x)
         csvwriter.writerow(temp)
 print("The data is created successfully")
+
+test_plot(current_dir)
