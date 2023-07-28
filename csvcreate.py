@@ -29,4 +29,4 @@ with open(file_path, 'a') as csvfile:
         csvwriter.writerow(temp)
 print("The data is created successfully")
 
-test_plot(current_dir)
+test_plot(current_dir)       # to plot the data created
